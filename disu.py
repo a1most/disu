@@ -19,7 +19,7 @@ if __name__=='__main__':
 	global folder,single_domain,thread,output
 	usage = """usage: 
 	%prog -f C:\\Users\\Administrator\\Desktop -t 10
-	%prog -d baidu.com -o C:\\Users\\Administrator\\Desktop\\1.txt"""
+	"""
 	parser = OptionParser(usage)
 
 	parser.add_option("-f", "--folder", dest="folder",type='string',default=None,help="Who is the target group?")

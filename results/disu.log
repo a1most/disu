@@ -1,0 +1,114 @@
+2022-09-14 17:29:34,441 [INFOR] MainProcess(17588):MainThread        (16428) | module.getdata:290 - 正在开始获取lixiang1aasdoa.com的子域名信息：
+2022-09-14 17:29:37,017 [ERROR] MainProcess(17588):MainThread        (16428) | module.getdata:299 - crt.sh未获取到lixiang1aasdoa.com数据！
+2022-09-14 17:29:38,083 [ERROR] MainProcess(17588):MainThread        (16428) | module.fullhunt_get:223 - 	fullhunt No Subdomains.
+2022-09-14 17:29:38,083 [ERROR] MainProcess(17588):MainThread        (16428) | module.getdata:311 - 未获取到数据或者fullhunt次数不够！
+2022-09-14 17:29:38,838 [INFOR] MainProcess(17588):MainThread        (16428) | module.getdata:319 - 	shodan获取到子域名数据0条。
+2022-09-14 17:29:42,895 [ERROR] MainProcess(17588):MainThread        (16428) | module.getdata:334 - 未获取到数据或者quake积分不够！
+2022-09-14 17:29:43,997 [ERROR] MainProcess(17588):MainThread        (16428) | module.getdata:350 - 未获取到数据或者fofa积分不够！
+2022-09-14 17:29:44,618 [ERROR] MainProcess(17588):MainThread        (16428) | module.hunter_get:112 - qianxin 查询 lixiang1aasdoa.com : ("'NoneType' object is not iterable",)
+2022-09-14 17:29:44,618 [ERROR] MainProcess(17588):MainThread        (16428) | module.getdata:365 - 	未获取到数据或者hunter积分不够！
+2022-09-14 17:29:48,888 [ERROR] MainProcess(17588):MainThread        (16428) | module.virustotal_get:196 - 	VirusTotal API No Subdomains.
+2022-09-14 17:29:48,888 [ERROR] MainProcess(17588):MainThread        (16428) | module.getdata:378 - 未获取到数据或者virustotal积分不够！
+2022-09-14 17:29:49,309 [ERROR] MainProcess(17588):MainThread        (16428) | module.zoomeye_get:280 - zoomeye 查询lixiang1aasdoa.com:('division by zero',)
+2022-09-14 17:29:49,309 [ERROR] MainProcess(17588):MainThread        (16428) | module.getdata:393 - 未获取到数据或者zoomeye积分不够！
+2022-09-14 17:29:49,310 [ERROR] MainProcess(17588):MainThread        (16428) | module.getdata:404 - 获取到lixiang1aasdoa.com的子域名信息为空，不进行存储操作。
+2022-09-14 17:30:40,205 [INFOR] MainProcess(16680):MainThread        (18616) | module.getdata:290 - 正在开始获取cjia.com的子域名信息：
+2022-09-14 17:30:44,825 [INFOR] MainProcess(16680):MainThread        (18616) | module.getdata:295 - 	crt.sh获取到子域名数据20条。
+2022-09-14 17:30:46,357 [INFOR] MainProcess(16680):MainThread        (18616) | module.getdata:307 - 	fullhunt获取到子域名数据22条。
+2022-09-14 17:30:52,037 [INFOR] MainProcess(16680):MainThread        (18616) | module.getdata:319 - 	shodan获取到子域名数据0条。
+2022-09-14 17:30:58,522 [INFOR] MainProcess(16680):MainThread        (18616) | module.getdata:330 - 	360quake获取到子域名数据500条。
+2022-09-14 17:31:01,658 [INFOR] MainProcess(16680):MainThread        (18616) | module.getdata:346 - 	fofa获取到子域名数据100条。
+2022-09-14 17:31:02,683 [INFOR] MainProcess(16680):MainThread        (18616) | module.getdata:361 - 	奇安信hunter获取到子域名数据58条。
+2022-09-14 17:31:03,471 [INFOR] MainProcess(16680):MainThread        (18616) | module.getdata:375 - 	virustotal获取到子域名数据39条。
+2022-09-14 17:31:15,090 [INFOR] MainProcess(16680):MainThread        (18616) | module.getdata:390 - 	zoomeye获取到子域名数据3条。
+2022-09-14 17:31:15,090 [INFOR] MainProcess(16680):MainThread        (18616) | module.getdata:399 - 正在对子域名进行存活性探测，请耐心等候：
+2022-09-14 17:33:57,237 [INFOR] MainProcess(16680):MainThread        (18616) | data_format.save_excel:145 - 已完成25%子域名存活探测，当前域名：cas.cjia.com，请耐心等候...
+2022-09-14 17:33:57,238 [INFOR] MainProcess(16680):MainThread        (18616) | data_format.save_excel:147 - 已完成50%子域名存活探测，当前域名：am.cjia.com，请耐心等候...
+2022-09-14 17:34:15,286 [INFOR] MainProcess(16680):MainThread        (18616) | data_format.save_excel:166 - 去重后获取到cjia.com子域名的数量为124。
+2022-09-14 17:34:15,303 [INFOR] MainProcess(16680):MainThread        (18616) | module.getdata:401 - 完成存活性探测，数据已存储至：C:\Users\Administrator\Desktop\自研python\地枢\disu_v1.0\output\cjia.com-20220914173040.xlsx。
+2022-09-14 17:34:15,304 [INFOR] MainProcess(16680):MainThread        (18616) | savedb.savedb_data:7 - 开始存储数据到数据库中....
+2022-09-14 17:34:19,890 [INFOR] MainProcess(16680):MainThread        (18616) | savedb.savedb_data:27 - 完成数据存储。
+2022-09-14 17:40:41,124 [INFOR] SpawnPoolWorker-2(19164):MainThread        (18088) | module.getdata:290 - 正在开始获取123.com的子域名信息：
+2022-09-14 17:40:41,130 [INFOR] SpawnPoolWorker-1(19056):MainThread        (19516) | module.getdata:290 - 正在开始获取aaa.com的子域名信息：
+2022-09-14 17:40:43,618 [INFOR] SpawnPoolWorker-2(19164):MainThread        (18088) | module.getdata:295 - 	crt.sh获取到子域名数据6条。
+2022-09-14 17:40:44,694 [ERROR] SpawnPoolWorker-2(19164):MainThread        (18088) | module.fullhunt_get:223 - 	fullhunt No Subdomains.
+2022-09-14 17:40:44,695 [ERROR] SpawnPoolWorker-2(19164):MainThread        (18088) | module.getdata:311 - 未获取到数据或者fullhunt次数不够！
+2022-09-14 17:40:50,616 [INFOR] SpawnPoolWorker-2(19164):MainThread        (18088) | module.getdata:319 - 	shodan获取到子域名数据100条。
+2022-09-14 17:40:51,747 [ERROR] SpawnPoolWorker-2(19164):MainThread        (18088) | module.getdata:334 - 未获取到数据或者quake积分不够！
+2022-09-14 17:40:52,533 [INFOR] SpawnPoolWorker-2(19164):MainThread        (18088) | module.getdata:346 - 	fofa获取到子域名数据100条。
+2022-09-14 17:41:04,439 [ERROR] SpawnPoolWorker-2(19164):MainThread        (18088) | module.hunter_get:112 - qianxin 查询 123.com : ("'NoneType' object has no attribute 'text'",)
+2022-09-14 17:41:04,440 [ERROR] SpawnPoolWorker-2(19164):MainThread        (18088) | module.getdata:365 - 	未获取到数据或者hunter积分不够！
+2022-09-14 17:41:05,318 [INFOR] SpawnPoolWorker-2(19164):MainThread        (18088) | module.getdata:375 - 	virustotal获取到子域名数据6条。
+2022-09-14 17:41:17,498 [ERROR] SpawnPoolWorker-1(19056):MainThread        (19516) | module.getdata:299 - crt.sh未获取到aaa.com数据！
+2022-09-14 17:41:24,200 [INFOR] SpawnPoolWorker-1(19056):MainThread        (19516) | module.getdata:307 - 	fullhunt获取到子域名数据1407条。
+2022-09-14 17:41:27,727 [INFOR] SpawnPoolWorker-1(19056):MainThread        (19516) | module.getdata:319 - 	shodan获取到子域名数据100条。
+2022-09-14 17:41:31,106 [ERROR] SpawnPoolWorker-2(19164):MainThread        (18088) | module.zoomeye_get:280 - zoomeye 查询123.com:(ReadTimeoutError("HTTPSConnectionPool(host='api.zoomeye.org', port=443): Read timed out. (read timeout=10)"),)
+2022-09-14 17:41:31,106 [ERROR] SpawnPoolWorker-2(19164):MainThread        (18088) | module.getdata:393 - 未获取到数据或者zoomeye积分不够！
+2022-09-14 17:41:31,107 [INFOR] SpawnPoolWorker-2(19164):MainThread        (18088) | module.getdata:399 - 正在对子域名进行存活性探测，请耐心等候：
+2022-09-14 17:43:09,288 [INFOR] SpawnPoolWorker-1(19056):MainThread        (19516) | module.getdata:330 - 	360quake获取到子域名数据465条。
+2022-09-14 17:43:09,798 [INFOR] SpawnPoolWorker-1(19056):MainThread        (19516) | module.getdata:346 - 	fofa获取到子域名数据100条。
+2022-09-14 17:43:12,792 [ERROR] SpawnPoolWorker-1(19056):MainThread        (19516) | module.hunter_get:112 - qianxin 查询 aaa.com : ("'NoneType' object has no attribute 'text'",)
+2022-09-14 17:43:12,792 [ERROR] SpawnPoolWorker-1(19056):MainThread        (19516) | module.getdata:365 - 	未获取到数据或者hunter积分不够！
+2022-09-14 17:43:13,900 [INFOR] SpawnPoolWorker-1(19056):MainThread        (19516) | module.getdata:375 - 	virustotal获取到子域名数据100条。
+2022-09-14 17:48:18,434 [ERROR] SpawnPoolWorker-1(19056):MainThread        (19516) | module.zoomeye_get:280 - zoomeye 查询aaa.com:('list',)
+2022-09-14 17:48:18,437 [ERROR] SpawnPoolWorker-1(19056):MainThread        (19516) | module.getdata:393 - 未获取到数据或者zoomeye积分不够！
+2022-09-14 17:48:18,437 [INFOR] SpawnPoolWorker-1(19056):MainThread        (19516) | module.getdata:399 - 正在对子域名进行存活性探测，请耐心等候：
+2022-09-14 18:03:55,920 [INFOR] SpawnPoolWorker-3(20404):MainThread        (17364) | module.getdata:290 - 正在开始获取123.com的子域名信息：
+2022-09-14 18:03:55,923 [INFOR] SpawnPoolWorker-1(11132):MainThread        (15000) | module.getdata:290 - 正在开始获取aaa.com的子域名信息：
+2022-09-14 18:04:32,913 [INFOR] SpawnPoolWorker-1(20200):MainThread        (8704 ) | module.getdata:290 - 正在开始获取aaa.com的子域名信息：
+2022-09-14 18:05:09,221 [ERROR] SpawnPoolWorker-1(20200):MainThread        (8704 ) | module.getdata:299 - crt.sh未获取到aaa.com数据！
+2022-09-14 18:05:15,925 [INFOR] SpawnPoolWorker-1(20200):MainThread        (8704 ) | module.getdata:307 - 	fullhunt获取到子域名数据1407条。
+2022-09-14 18:05:18,036 [INFOR] SpawnPoolWorker-1(20200):MainThread        (8704 ) | module.getdata:319 - 	shodan获取到子域名数据100条。
+2022-09-14 18:08:53,011 [INFOR] SpawnPoolWorker-1(20200):MainThread        (8704 ) | module.getdata:330 - 	360quake获取到子域名数据465条。
+2022-09-14 18:08:54,382 [INFOR] SpawnPoolWorker-1(20200):MainThread        (8704 ) | module.getdata:346 - 	fofa获取到子域名数据100条。
+2022-09-14 18:08:55,473 [ERROR] SpawnPoolWorker-1(20200):MainThread        (8704 ) | module.hunter_get:112 - qianxin 查询 aaa.com : ("'NoneType' object has no attribute 'text'",)
+2022-09-14 18:08:55,473 [ERROR] SpawnPoolWorker-1(20200):MainThread        (8704 ) | module.getdata:365 - 	未获取到数据或者hunter积分不够！
+2022-09-14 18:08:56,815 [INFOR] SpawnPoolWorker-1(20200):MainThread        (8704 ) | module.getdata:375 - 	virustotal获取到子域名数据100条。
+2022-09-14 18:14:11,189 [ERROR] SpawnPoolWorker-1(20200):MainThread        (8704 ) | module.zoomeye_get:280 - zoomeye 查询aaa.com:('list',)
+2022-09-14 18:14:11,190 [ERROR] SpawnPoolWorker-1(20200):MainThread        (8704 ) | module.getdata:393 - 未获取到数据或者zoomeye积分不够！
+2022-09-14 18:14:11,190 [INFOR] SpawnPoolWorker-1(20200):MainThread        (8704 ) | module.getdata:399 - 正在对子域名进行存活性探测，请耐心等候：
+2022-09-14 18:38:12,125 [INFOR] MainProcess(15656):MainThread        (12488) | module.getdata:290 - 正在开始获取cjia.com的子域名信息：
+2022-09-14 18:38:14,702 [INFOR] MainProcess(15656):MainThread        (12488) | module.getdata:295 - 	crt.sh获取到子域名数据20条。
+2022-09-14 18:38:14,702 [ERROR] MainProcess(15656):MainThread        (12488) | module.getdata:313 - 未获取到fullhunt_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-14 18:38:14,703 [ERROR] MainProcess(15656):MainThread        (12488) | module.getdata:321 - 未获取到shodan_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-14 18:38:14,703 [ERROR] MainProcess(15656):MainThread        (12488) | module.getdata:336 - 未获取到quake_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-14 18:38:14,703 [ERROR] MainProcess(15656):MainThread        (12488) | module.getdata:352 - 未获取到fofa_email或fofa_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-14 18:38:14,703 [ERROR] MainProcess(15656):MainThread        (12488) | module.getdata:367 - 未获取到hunter_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-14 18:38:14,704 [ERROR] MainProcess(15656):MainThread        (12488) | module.getdata:380 - 未获取到virustotal_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-14 18:38:14,705 [ERROR] MainProcess(15656):MainThread        (12488) | module.getdata:395 - 未获取到zoomeye_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-14 18:52:03,828 [INFOR] MainProcess(4088):MainThread        (9096 ) | module.getdata:290 - 正在开始获取cjia.com的子域名信息：
+2022-09-14 18:52:12,797 [INFOR] MainProcess(4088):MainThread        (9096 ) | module.getdata:295 - 	crt.sh获取到子域名数据20条。
+2022-09-14 18:52:12,797 [ERROR] MainProcess(4088):MainThread        (9096 ) | module.getdata:313 - 未获取到fullhunt_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-14 18:52:12,798 [ERROR] MainProcess(4088):MainThread        (9096 ) | module.getdata:321 - 未获取到shodan_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-14 18:52:12,798 [ERROR] MainProcess(4088):MainThread        (9096 ) | module.getdata:336 - 未获取到quake_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-14 18:52:12,798 [ERROR] MainProcess(4088):MainThread        (9096 ) | module.getdata:352 - 未获取到fofa_email或fofa_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-14 18:52:12,798 [ERROR] MainProcess(4088):MainThread        (9096 ) | module.getdata:367 - 未获取到hunter_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-14 18:52:12,799 [ERROR] MainProcess(4088):MainThread        (9096 ) | module.getdata:380 - 未获取到virustotal_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-14 18:52:12,799 [ERROR] MainProcess(4088):MainThread        (9096 ) | module.getdata:395 - 未获取到zoomeye_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-15 09:35:52,739 [INFOR] MainProcess(7028):MainThread        (7036 ) | module.getdata:290 - 正在开始获取cjia.com的子域名信息：
+2022-09-15 09:35:57,627 [ERROR] MainProcess(7028):MainThread        (7036 ) | module.crt_sh_get:240 - 	crt.sh获取数据出错。
+2022-09-15 09:35:57,627 [ERROR] MainProcess(7028):MainThread        (7036 ) | module.getdata:299 - 	crt.sh未获取到cjia.com数据！
+2022-09-15 09:35:57,627 [ERROR] MainProcess(7028):MainThread        (7036 ) | module.getdata:314 - 未获取到fullhunt_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-15 09:35:57,627 [ERROR] MainProcess(7028):MainThread        (7036 ) | module.getdata:323 - 未获取到shodan_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-15 09:35:57,627 [ERROR] MainProcess(7028):MainThread        (7036 ) | module.getdata:339 - 未获取到quake_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-15 09:35:57,627 [ERROR] MainProcess(7028):MainThread        (7036 ) | module.getdata:356 - 未获取到fofa_email或fofa_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-15 09:35:57,627 [ERROR] MainProcess(7028):MainThread        (7036 ) | module.getdata:372 - 未获取到hunter_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-15 09:35:57,627 [ERROR] MainProcess(7028):MainThread        (7036 ) | module.getdata:386 - 未获取到virustotal_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-15 09:35:57,627 [ERROR] MainProcess(7028):MainThread        (7036 ) | module.getdata:402 - 未获取到zoomeye_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-15 09:35:57,627 [ERROR] MainProcess(7028):MainThread        (7036 ) | module.getdata:411 - 获取到cjia.com的子域名信息为空，不进行存储操作。
+2022-09-15 09:36:14,971 [INFOR] MainProcess(12876):MainThread        (10196) | module.getdata:290 - 正在开始获取cjia.com的子域名信息：
+2022-09-15 09:36:19,564 [INFOR] MainProcess(12876):MainThread        (10196) | module.getdata:295 - 	crt.sh获取到子域名数据20条。
+2022-09-15 09:36:19,564 [ERROR] MainProcess(12876):MainThread        (10196) | module.getdata:314 - 未获取到fullhunt_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-15 09:36:19,580 [ERROR] MainProcess(12876):MainThread        (10196) | module.getdata:323 - 未获取到shodan_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-15 09:36:19,580 [ERROR] MainProcess(12876):MainThread        (10196) | module.getdata:339 - 未获取到quake_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-15 09:36:19,580 [ERROR] MainProcess(12876):MainThread        (10196) | module.getdata:356 - 未获取到fofa_email或fofa_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-15 09:36:19,580 [ERROR] MainProcess(12876):MainThread        (10196) | module.getdata:372 - 未获取到hunter_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-15 09:36:19,580 [ERROR] MainProcess(12876):MainThread        (10196) | module.getdata:386 - 未获取到virustotal_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-15 09:36:19,580 [ERROR] MainProcess(12876):MainThread        (10196) | module.getdata:402 - 未获取到zoomeye_key值，请前往config.ini文件进行补充或忽略此信息。
+2022-09-15 09:36:19,580 [INFOR] MainProcess(12876):MainThread        (10196) | module.getdata:406 - 正在对子域名进行存活性探测，请耐心等候：
+2022-09-15 09:36:20,142 [INFOR] MainProcess(12876):MainThread        (10196) | data_format.save_excel:145 - 已完成25%子域名存活探测，当前域名：cjia.com，请耐心等候...
+2022-09-15 09:36:20,142 [INFOR] MainProcess(12876):MainThread        (10196) | data_format.save_excel:147 - 已完成50%子域名存活探测，当前域名：cjia.com，请耐心等候...
+2022-09-15 09:36:20,142 [INFOR] MainProcess(12876):MainThread        (10196) | data_format.save_excel:166 - 去重后获取到cjia.com子域名的数量为1。
+2022-09-15 09:36:20,236 [INFOR] MainProcess(12876):MainThread        (10196) | module.getdata:408 - 完成存活性探测，数据已存储至：C:\Users\Administrator\Desktop\自研python\地枢\disu_v1.0\output\cjia.com-20220915093614.xlsx。
+2022-09-15 09:36:20,236 [INFOR] MainProcess(12876):MainThread        (10196) | savedb.savedb_data:7 - 开始存储数据到数据库中....
+2022-09-15 09:36:20,314 [INFOR] MainProcess(12876):MainThread        (10196) | savedb.savedb_data:27 - 完成数据存储。

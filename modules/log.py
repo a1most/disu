@@ -5,7 +5,7 @@ from loguru import logger
 
 # 路径设置
 relative_directory = pathlib.Path(__file__).parent.parent  # disu代码相对路径
-result_save_dir = relative_directory.joinpath('results')  # 结果保存目录
+result_save_dir = relative_directory.joinpath('log')  # 结果保存目录
 log_path = result_save_dir.joinpath('disu.log')  # disu日志保存路径
 
 # 日志配置

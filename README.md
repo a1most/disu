@@ -6,7 +6,7 @@
 包含crt.sh、fullhunt、fofa、360quake、fofa、hunter、virustotal、zoomeye的获取子域名的集成工具。
 
 说明：
-除crt.sh外，其他平台需要在config.ini中配置api。
+除crt.sh、rapiddns外，其他平台需要在config.ini中配置api。
 
 使用：python3 disu.py -d baidu.com
 

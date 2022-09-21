@@ -8,6 +8,28 @@
 说明：
 除crt.sh、rapiddns外，其他平台需要在config.ini中配置api。
 
+来源站点：
+fofa：
+https://fofa.info
+
+hunter：
+https://hunter.qianxin.com/
+
+fullhunt：
+https://fullhunt.io/
+
+qukae：
+https://quake.360.cn/
+
+shodan：
+https://www.shodan.io/
+
+zoomeye：
+https://www.zoomeye.org/
+
+virustotal：
+https://www.virustotal.com/
+
 使用：python3 disu.py -d baidu.com
 
 ![1663206603508](https://user-images.githubusercontent.com/34560797/190294393-a1cd12ca-9877-4c09-bb42-dfe0fd8e73bd.png)

@@ -60,6 +60,7 @@ https://www.virustotal.com/
 【更新日志】
 
 2022年9月20日：1、新增rapiddns平台。2、调整文档结构。
+2022年10月13日：1、新增certspotter、chaziyu、dnsscan、threatminer、venuseye平台。2、调整文档结构。
 
 喜欢记得三连。
 

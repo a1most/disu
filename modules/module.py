@@ -5,7 +5,7 @@ import time,datetime
 import math,time,sys
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-sys.path.append(BASE_DIR+"\\..\\")
+sys.path.append(os.path.join(BASE_DIR, ".."))
 
 from modules.savedb import *
 from modules.data_format import *
@@ -29,7 +29,7 @@ from pm.threatminer import *
 
 def getdata(domain,single=None):
 	timestamp=time.strftime('%Y%m%d%H%M%S',time.localtime(time.time()))
-	path_excel=os.getcwd()+'\\output\\'+domain+"-"+timestamp+'.xlsx'
+	path_excel=os.path.join(os.getcwd(), 'output', domain+"-"+timestamp+'.xlsx')
 	conf=configparser.ConfigParser()
 	conf.read('./config.ini')
 	sections=conf.sections()

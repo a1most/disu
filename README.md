@@ -3,10 +3,10 @@
 请勿利用文章内的相关技术及工具从事非法测试，由于传播、利用此文所提供的信息而造成的任何直接或者间接的后果及损失，均由使用者本人负责，开发者不为此承担任何责任。
 
 # disu
-包含crt.sh、fullhunt、fofa、360quake、fofa、hunter、virustotal、zoomeye的获取子域名的集成工具。
+包含crt.sh、fullhunt、fofa、360quake、fofa、hunter、virustotal、zoomeye、rapiddns、certspotter、chaziyu、dnsscan、threatminer、venuseye的获取子域名的集成工具。
 
 说明：
-除crt.sh、rapiddns外，其他平台需要在config.ini中配置api。
+除fullhunt、fofa、360quake、fofa、hunter、virustotal、zoomeye外，其他平台不需要在config.ini中配置api。
 
 来源站点：
 fofa：
@@ -60,7 +60,12 @@ https://www.virustotal.com/
 【更新日志】
 
 2022年9月20日：1、新增rapiddns平台。2、调整文档结构。
+
 2022年10月13日：1、新增certspotter、chaziyu、dnsscan、threatminer、venuseye平台。2、调整文档结构。
+
+【感谢】
+
+@thlz998
 
 喜欢记得三连。
 

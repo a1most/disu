@@ -3,7 +3,7 @@
 请勿利用文章内的相关技术及工具从事非法测试，由于传播、利用此文所提供的信息而造成的任何直接或者间接的后果及损失，均由使用者本人负责，开发者不为此承担任何责任。
 
 # disu
-包含crt.sh、fullhunt、fofa、360quake、fofa、hunter、virustotal、zoomeye、rapiddns、certspotter、chaziyu、dnsscan、threatminer、venuseye的获取子域名的集成工具。
+包含crt.sh、fullhunt、fofa、360quake、fofa、hunter、virustotal、zoomeye、rapiddns、certspotter、chaziyu、dnsscan、threatminer的获取子域名的集成工具。
 
 说明：
 除fullhunt、fofa、360quake、fofa、hunter、virustotal、zoomeye外，其他平台不需要在config.ini中配置api。

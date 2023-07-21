@@ -3,6 +3,11 @@ from modules.log import logger
 from modules.test_alive import check_alive
 from tqdm import tqdm
 import math
+import threading
+from concurrent.futures import ThreadPoolExecutor
+import multiprocessing
+
+lock=threading.Lock()
 
 #格式化几个搜索引擎的数据，方便存储。
 
@@ -38,7 +43,7 @@ def extend_fofa(fofadata,domain):
 		i.append(domain)
 		i.append(time.strftime("%Y-%m-%d %H:%M:%S"))
 		fofa_data.append(i)
-	print (len(fofa_data))
+	#print (len(fofa_data))
 	return fofa_data
 
 
@@ -194,8 +199,79 @@ def extend_threatminer(data,domain):
 		threatminer_data_all.append(threatminer_data)
 	return threatminer_data_all
 
+def extend_dnsgrep(data,domain):
+	dnsgrep_data_all=[]
+	for i in data:
+		dnsgrep_data=[]
+		dnsgrep_data.append(i)
+		dnsgrep_data.append("")
+		dnsgrep_data.append("")
+		dnsgrep_data.append("dnsgrep")
+		dnsgrep_data.append(domain)
+		dnsgrep_data.append(time.strftime("%Y-%m-%d %H:%M:%S"))
+		dnsgrep_data_all.append(dnsgrep_data)
+	return dnsgrep_data_all
+	
+def extend_venuseye(data,domain):
+	venuseye_data_all=[]
+	for i in data:
+		venuseye_data=[]
+		venuseye_data.append(i)
+		venuseye_data.append("")
+		venuseye_data.append("")
+		venuseye_data.append("venuseye")
+		venuseye_data.append(domain)
+		venuseye_data.append(time.strftime("%Y-%m-%d %H:%M:%S"))
+		venuseye_data_all.append(venuseye_data)
+	return venuseye_data_all
+
+def extend_alienvault(data,domain):
+	alienvault_data_all=[]
+	for i in data:
+		alienvault_data=[]
+		alienvault_data.append(i['domain'])
+		alienvault_data.append(i['ip'])
+		alienvault_data.append("")
+		alienvault_data.append("alienvault")
+		alienvault_data.append(domain)
+		alienvault_data.append(time.strftime("%Y-%m-%d %H:%M:%S"))
+		alienvault_data_all.append(alienvault_data)
+	return alienvault_data_all
+
+def extend_dbappsecurity(data,domain):
+	dbappsecurity_data_all=[]
+	for i in data:
+		dbappsecurity_data=[]
+		dbappsecurity_data.append(i)
+		dbappsecurity_data.append('')
+		dbappsecurity_data.append("")
+		dbappsecurity_data.append("dbappsecurity-安恒")
+		dbappsecurity_data.append(domain)
+		dbappsecurity_data.append(time.strftime("%Y-%m-%d %H:%M:%S"))
+		dbappsecurity_data_all.append(dbappsecurity_data)
+	return dbappsecurity_data_all
+
+def extend_antiycloud(data,domain):
+	antiycloud_data_all=[]
+	for i in data:
+		antiycloud_data=[]
+		antiycloud_data.append(i)
+		antiycloud_data.append('')
+		antiycloud_data.append("")
+		antiycloud_data.append("antiycloud-安天")
+		antiycloud_data.append(domain)
+		antiycloud_data.append(time.strftime("%Y-%m-%d %H:%M:%S"))
+		antiycloud_data_all.append(antiycloud_data)
+	return antiycloud_data_all
+
+def sava_temp_txt(data,path):
+	with open(path,'a+') as f:
+		for j in data:
+			f.write(str(j[0]))
+			f.write('\n')
 
 def save_excel(data,path):
+	pool = multiprocessing.Pool(processes=15) 
 	wb=openpyxl.Workbook()
 	ws=wb.active
 	ws.cell(1,1).value='子域名'
@@ -204,6 +280,7 @@ def save_excel(data,path):
 	ws.cell(1,3).value='http或https'
 	ws.cell(1,4).value='状态码'
 	ws.cell(1,5).value='返回长度'
+	#ws.cell(1,6).value='title'
 
 	ws.cell(1,6).value='IP'
 	ws.cell(1,7).value='端口'
@@ -218,18 +295,34 @@ def save_excel(data,path):
 	sifenzhiyi=math.ceil(sifenzhiyi)
 	s=0
 	for i in data:
+		if s==0:
+			logger.log('INFOR',"正在开始进行子域名存活探测，当前域名：{}，请耐心等候...".format(i[0]))
 		if s==sifenzhiyi:
 			logger.log('INFOR',"已完成25%子域名存活探测，当前域名：{}，请耐心等候...".format(i[0]))
 		if s==yiban:
 			logger.log('INFOR',"已完成50%子域名存活探测，当前域名：{}，请耐心等候...".format(i[0]))
+		if s==length_data:
+			logger.log('INFOR',"已完成100%子域名存活探测，当前域名：{}，请耐心等候...".format(i[0]))
 		s=s+1
-		ws.cell(j,1).value=str(i[0])
-		cs1,cs2,cs3,cs4=check_alive(i[0])
+		r = pool.apply_async(check_alive, (i[0],))
+		alive=r.get()[0]
+		http_s=r.get()[1]
+		status_code=r.get()[2]
+		length=r.get()[3]
+		cs5=r.get()[4]
+		#alive,http_s,status_code,length,cs5=check_alive(i[0])
+		if http_s=="http" and cs5:
+			ws.cell(j,1).value=str('http://'+i[0])
+		elif http_s=="https" and cs5:
+			ws.cell(j,1).value=str('https://'+i[0])
+		else:
+			ws.cell(j,1).value=str(i[0])
 		#检测网页。
-		ws.cell(j,2).value=str(cs1)
-		ws.cell(j,3).value=str(cs2)
-		ws.cell(j,4).value=str(cs3)
-		ws.cell(j,5).value=str(cs4)
+		ws.cell(j,2).value=str(alive)
+		ws.cell(j,3).value=str(http_s)
+		ws.cell(j,4).value=str(status_code)
+		ws.cell(j,5).value=str(length)
+		#ws.cell(j,6).value=str(cs6)
 
 		ws.cell(j,6).value=str(i[1])
 		ws.cell(j,7).value=str(i[2])
@@ -239,5 +332,7 @@ def save_excel(data,path):
 		j=j+1
 		domain=str(i[4])
 	#logger.log('INFOR',"去重后获取到{}子域名的数量为{}。".format(domain,len(temp_liebiao)))
+	pool.close()
+	pool.join()
 	wb.save(path)
 

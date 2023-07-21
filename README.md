@@ -63,6 +63,8 @@ https://www.virustotal.com/
 
 2022年10月13日：1、新增certspotter、chaziyu、dnsscan、threatminer、venuseye平台。2、调整文档结构。
 
+2023年7月21日：1、修复批量扫描bug。2、修复chaziyu的bug。3、提高子域名存活检测速度。
+
 【感谢】
 
 @thlz998

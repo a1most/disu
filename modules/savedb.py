@@ -24,5 +24,5 @@ def savedb_data(data):
 	"""
 	cursor.close()
 	conn.commit()
-	logger.log('INFOR',"完成数据存储。")
+	#logger.log('INFOR',"完成数据存储。")
 	conn.close()

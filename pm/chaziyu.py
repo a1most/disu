@@ -32,7 +32,7 @@ def chaziyu(domain,header1):
 		for i in temp:
 			if domain in i and i not in domains:
 				domains.append(i)
-	except:
+	except Exception as e:
 		logger.log('ERROR','chaziyu 查询{}:{}'.format(domain,e.args))
 		domains=[]
 	return domains

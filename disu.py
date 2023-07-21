@@ -17,31 +17,28 @@ def data_fenxi(folder):
 	#此函数整理从文件中获取到的domain信息。
 				
 if __name__=='__main__':
-	global folder,single_domain,thread,output
+	global folder,single_domain,output
 	usage = """usage: 
-	%prog -f C:\\Users\\Administrator\\Desktop -t 10
+	%prog -f C:\\Users\\Administrator\\Desktop
 	%prog -d baidu.com -o C:\\Users\\Administrator\\Desktop\\1.txt"""
 	parser = OptionParser(usage)
 
 	parser.add_option("-f", "--folder", dest="folder",type='string',default=None,help="Who is the target group?")
 	parser.add_option("-d", "--domain", dest="single_domain",type='string',help="who is the target?")
-	parser.add_option("-t", "--thread", dest="thread",type='int',default=None,help="how many pieces do you want?")
 	#parser.add_option("-o", "--output", dest="output",type='string',default=None,help="where is the output?")
 	options, args = parser.parse_args()
 	
-	folder,single_domain,thread=options.folder,options.single_domain,options.thread
+	folder,single_domain=options.folder,options.single_domain
 	#以上为从参数获取数据。
 
 
 	#以上代码
 	if folder:
-		if thread:
-			data_fenxi(folder)
-			pool=Pool(thread)
-			pool.map(getdata,domains)
-			#进程传入列表，会对列表中的值自动进行解析。
-		else:
-			print ("请输入线程信息: -t")
+		data_fenxi(folder)
+		for jjj in domains:
+			getdata(jjj)
+		print (domains)
+		#进程传入列表，会对列表中的值自动进行解析。
 	elif single_domain:
 		if '.' in single_domain:
 			getdata(single_domain,single='1')
